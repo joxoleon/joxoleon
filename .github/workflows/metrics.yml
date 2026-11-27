@@ -1,0 +1,39 @@
+# Language breakdown across all repositories, including private ones, as an SVG committed to
+# this repo (metrics.languages.svg). It shows language names and shares only, no repository names.
+# Needs a repository secret METRICS_TOKEN (a personal access token that can read your repos);
+# until that secret exists the job skips itself instead of failing.
+name: Language metrics
+
+on:
+  schedule:
+    - cron: "0 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  languages:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      HAS_TOKEN: ${{ secrets.METRICS_TOKEN != '' }}
+    steps:
+      - name: Skip without METRICS_TOKEN
+        if: env.HAS_TOKEN != 'true'
+        run: echo "METRICS_TOKEN is not set; skipping."
+
+      - uses: lowlighter/metrics@latest
+        if: env.HAS_TOKEN == 'true'
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          filename: metrics.languages.svg
+          base: ""
+          config_timezone: Europe/Belgrade
+          plugin_languages: yes
+          plugin_languages_limit: 8
+          plugin_languages_threshold: 2%
+          plugin_languages_details: percentage
+          plugin_languages_ignored: html, css, scss, makefile, dockerfile, jupyter notebook, shell, batchfile, procfile
+          plugin_languages_sections: most-used
