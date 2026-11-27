@@ -19,16 +19,10 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - uses: Platane/snk@v3
-        with:
-          github_user_name: ${{ github.repository_owner }}
-          outputs: |
-            dist/github-snake.svg
-            dist/github-snake-dark.svg?palette=github-dark
-
       - name: Static activity graphs
         env:
           GH_USER: ${{ github.repository_owner }}
+        # Runs before the snake step, which writes as root inside Docker.
         run: |
           set -euo pipefail
           mkdir -p dist
@@ -41,6 +35,13 @@ jobs:
           }
           fetch activity-dark.svg "bg_color=0D1117&color=8B949E&title_color=E6EDF3&line=58A6FF&point=A371F7&area_color=1F6FEB"
           fetch activity-light.svg "bg_color=FFFFFF&color=57606A&title_color=24292F&line=1F6FEB&point=8250DF&area_color=1F6FEB"
+
+      - uses: Platane/snk@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-snake.svg
+            dist/github-snake-dark.svg?palette=github-dark
 
       - uses: crazy-max/ghaction-github-pages@v4
         with:
