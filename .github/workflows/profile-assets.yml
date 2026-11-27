@@ -1,5 +1,6 @@
-# Daily contribution snake, published to the `output` branch that the README links to.
-# If a step fails, nothing is published and yesterday's image stays up.
+# Daily profile images, published to the `output` branch that the README links to:
+# the "<year> in numbers" card (scripts/activity_card.py, light and dark) and the contribution snake.
+# If a step fails, nothing is published and yesterday's images stay up.
 name: Profile assets
 
 on:
@@ -17,6 +18,16 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
+      - uses: actions/checkout@v4
+
+      - name: Year in numbers card
+        # Runs before the snake step, which writes into dist as root inside Docker.
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_USER: ${{ github.repository_owner }}
+          OUT_DIR: dist
+        run: python3 scripts/activity_card.py
+
       - uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}

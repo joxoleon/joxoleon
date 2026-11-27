@@ -32,8 +32,8 @@
 <sub>Most of my work lives in private repositories; these count it.</sub>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user=joxoleon&theme=github-dark-blue&hide_border=true&background=0D1117&disable_animations=true" />
-  <img src="https://streak-stats.demolab.com?user=joxoleon&hide_border=true&disable_animations=true" alt="GitHub contribution streak" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/joxoleon/joxoleon/output/activity-dark.svg" />
+  <img src="https://raw.githubusercontent.com/joxoleon/joxoleon/output/activity-light.svg" width="100%" alt="Contributions this year: totals, active days, busiest day, best month, longest streak and a monthly chart" />
 </picture>
 
 
