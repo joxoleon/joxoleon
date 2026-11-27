@@ -1,7 +1,5 @@
-# Daily profile images, published to the `output` branch that the README links to:
-# the contribution snake, and a static copy of the 60-day activity graph (light and dark).
-# The graph service animates its line; the copy strips that so the page stays still.
-# If any step fails, nothing is published and yesterday's images stay up.
+# Daily contribution snake, published to the `output` branch that the README links to.
+# If a step fails, nothing is published and yesterday's image stays up.
 name: Profile assets
 
 on:
@@ -19,23 +17,6 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - name: Static activity graphs
-        env:
-          GH_USER: ${{ github.repository_owner }}
-        # Runs before the snake step, which writes as root inside Docker.
-        run: |
-          set -euo pipefail
-          mkdir -p dist
-          base="https://github-readme-activity-graph.vercel.app/graph?username=${GH_USER}&days=60&area=true&hide_border=true&radius=6&custom_title=Daily%20contributions%2C%20last%2060%20days"
-          fetch() {
-            curl -fsSL --retry 3 --max-time 60 "${base}&$2" \
-              | sed -E 's/animation:[^;]*;//g; s/stroke-dashoffset: *5000;/stroke-dashoffset: 0;/g' > "dist/$1"
-            grep -q '<svg' "dist/$1"
-            ! grep -q 'animation:' "dist/$1"
-          }
-          fetch activity-dark.svg "bg_color=0D1117&color=8B949E&title_color=E6EDF3&line=58A6FF&point=A371F7&area_color=1F6FEB"
-          fetch activity-light.svg "bg_color=FFFFFF&color=57606A&title_color=24292F&line=1F6FEB&point=8250DF&area_color=1F6FEB"
-
       - uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
