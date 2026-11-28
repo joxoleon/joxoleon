@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="340" viewBox="0 0 880 340" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+<defs><linearGradient id="bar" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#1F6FEB"/><stop offset="1" stop-color="#7F52FF"/></linearGradient></defs>
+<text x="440.0" y="30" text-anchor="middle" font-size="18" font-weight="600" fill="#E6EDF3">2026 in numbers</text>
+<text x="88.0" y="84" text-anchor="middle" font-size="30" font-weight="700" fill="#58A6FF">4,276</text>
+<text x="88.0" y="108" text-anchor="middle" font-size="13" font-weight="600" fill="#C9D1D9">contributions</text>
+<text x="88.0" y="126" text-anchor="middle" font-size="11" fill="#8B949E">Jan 1 to Nov 28</text>
+<text x="264.0" y="84" text-anchor="middle" font-size="30" font-weight="700" fill="#58A6FF">283</text>
+<text x="264.0" y="108" text-anchor="middle" font-size="13" font-weight="600" fill="#C9D1D9">active days</text>
+<text x="264.0" y="126" text-anchor="middle" font-size="11" fill="#8B949E">of 332 so far</text>
+<text x="440.0" y="84" text-anchor="middle" font-size="30" font-weight="700" fill="#58A6FF">193</text>
+<text x="440.0" y="108" text-anchor="middle" font-size="13" font-weight="600" fill="#C9D1D9">busiest day</text>
+<text x="440.0" y="126" text-anchor="middle" font-size="11" fill="#8B949E">Oct 7</text>
+<text x="616.0" y="84" text-anchor="middle" font-size="30" font-weight="700" fill="#58A6FF">1,015</text>
+<text x="616.0" y="108" text-anchor="middle" font-size="13" font-weight="600" fill="#C9D1D9">best month</text>
+<text x="616.0" y="126" text-anchor="middle" font-size="11" fill="#8B949E">November</text>
+<text x="792.0" y="84" text-anchor="middle" font-size="30" font-weight="700" fill="#58A6FF">35</text>
+<text x="792.0" y="108" text-anchor="middle" font-size="13" font-weight="600" fill="#C9D1D9">longest streak</text>
+<text x="792.0" y="126" text-anchor="middle" font-size="11" fill="#8B949E">current: 35 days</text>
+<line x1="40" y1="148" x2="840" y2="148" stroke="#30363D" stroke-width="1"/>
+<text x="40" y="172" font-size="11" fill="#8B949E">Contributions per month</text>
+<rect x="54.7" y="293.7" width="37.3" height="10.3" rx="4" fill="url(#bar)"/>
+<text x="73.3" y="287.7" text-anchor="middle" font-size="11" fill="#C9D1D9">97</text>
+<text x="73.3" y="322" text-anchor="middle" font-size="11" fill="#8B949E">Jan</text>
+<rect x="121.3" y="292.3" width="37.3" height="11.7" rx="4" fill="url(#bar)"/>
+<text x="140.0" y="286.3" text-anchor="middle" font-size="11" fill="#C9D1D9">110</text>
+<text x="140.0" y="322" text-anchor="middle" font-size="11" fill="#8B949E">Feb</text>
+<rect x="188.0" y="283.8" width="37.3" height="20.2" rx="4" fill="url(#bar)"/>
+<text x="206.7" y="277.8" text-anchor="middle" font-size="11" fill="#C9D1D9">190</text>
+<text x="206.7" y="322" text-anchor="middle" font-size="11" fill="#8B949E">Mar</text>
+<rect x="254.7" y="285.4" width="37.3" height="18.6" rx="4" fill="url(#bar)"/>
+<text x="273.3" y="279.4" text-anchor="middle" font-size="11" fill="#C9D1D9">175</text>
+<text x="273.3" y="322" text-anchor="middle" font-size="11" fill="#8B949E">Apr</text>
+<rect x="321.3" y="271.7" width="37.3" height="32.3" rx="4" fill="url(#bar)"/>
+<text x="340.0" y="265.7" text-anchor="middle" font-size="11" fill="#C9D1D9">304</text>
+<text x="340.0" y="322" text-anchor="middle" font-size="11" fill="#8B949E">May</text>
+<rect x="388.0" y="286.9" width="37.3" height="17.1" rx="4" fill="url(#bar)"/>
+<text x="406.7" y="280.9" text-anchor="middle" font-size="11" fill="#C9D1D9">161</text>
+<text x="406.7" y="322" text-anchor="middle" font-size="11" fill="#8B949E">Jun</text>
+<rect x="454.7" y="260.1" width="37.3" height="43.9" rx="4" fill="url(#bar)"/>
+<text x="473.3" y="254.1" text-anchor="middle" font-size="11" fill="#C9D1D9">413</text>
+<text x="473.3" y="322" text-anchor="middle" font-size="11" fill="#8B949E">Jul</text>
+<rect x="521.3" y="258.5" width="37.3" height="45.5" rx="4" fill="url(#bar)"/>
+<text x="540.0" y="252.5" text-anchor="middle" font-size="11" fill="#C9D1D9">428</text>
+<text x="540.0" y="322" text-anchor="middle" font-size="11" fill="#8B949E">Aug</text>
+<rect x="588.0" y="244.4" width="37.3" height="59.6" rx="4" fill="url(#bar)"/>
+<text x="606.7" y="238.4" text-anchor="middle" font-size="11" fill="#C9D1D9">560</text>
+<text x="606.7" y="322" text-anchor="middle" font-size="11" fill="#8B949E">Sep</text>
+<rect x="654.7" y="216.4" width="37.3" height="87.6" rx="4" fill="url(#bar)"/>
+<text x="673.3" y="210.4" text-anchor="middle" font-size="11" fill="#C9D1D9">823</text>
+<text x="673.3" y="322" text-anchor="middle" font-size="11" fill="#8B949E">Oct</text>
+<rect x="721.3" y="196.0" width="37.3" height="108.0" rx="4" fill="url(#bar)"/>
+<text x="740.0" y="190.0" text-anchor="middle" font-size="11" fill="#C9D1D9">1,015</text>
+<text x="740.0" y="322" text-anchor="middle" font-size="11" fill="#8B949E">Nov</text>
+<rect x="788.0" y="302" width="37.3" height="2" rx="1" fill="#21262D"/>
+<text x="806.7" y="322" text-anchor="middle" font-size="11" fill="#8B949E">Dec</text>
+</svg>
